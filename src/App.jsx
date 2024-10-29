@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import { learners } from './components/utility/data.mjs';
-import Learner from './components/Learner/Learner';
+import { useState } from "react";
+import "./App.css";
+import Learner from "./components/Learner/Learner";
 
-
-const App = () => {
-  const [learnerData] = useState({learners});
+function App() {
+  const [learnerData] = useState({
+    learners: learnerData,
+  });
 
   return (
-    <>
- {learnerData.learners.map((learner, index) => (
+    <main>
+           {learnerData.learners.map((learner, index) => (
         <Learner key={index} learner={learner} />
       ))}
-    </>
-  )
+    </main>
+  );
 }
 
 export default App;
