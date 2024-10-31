@@ -4,7 +4,7 @@ import Learner from "./components/Learner/Learner";
 
 function App() {
   const [learnerData] = useState({
-    learners: learnerData,
+    learners: learners,
   });
 
   return (
